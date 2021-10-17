@@ -37,6 +37,26 @@ class Test:
     def recta(self):
         return (test.y - self.y)/(test.x - self.x)
 
+class Beta:
+
+    def __inti__(self, stock_first_price, stock_last_price, composite_first_price, composite_last_price):
+        self.stock_first_price = stock_first_price
+        self.stock_last_price = stock_last_price
+        self.composite_first_price = composite_first_price
+        self.composite_last_price = composite_last_price
+
+    def stock_rend(self):
+        stock_rend = (self.stock_last_price - self.stock_first_price) / self.stock_last_price
+        return stock_rend
+
+    def composite_rend(self):
+        composite_rend = (self.composite_last_price - self.composite_first_price) / self.composite_last_price
+        return composite_rend
+
+    def stock_beta(self):
+        stock_beta = (self.composite_last_price - self.stock_last_price) / (self.composite_first_price - self.stock_first_price)
+        return stock_beta
+
 pygame.init()
 
 while True:
