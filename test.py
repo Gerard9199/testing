@@ -57,6 +57,23 @@ class Beta:
         stock_beta = (self.composite_last_price - self.stock_last_price) / (self.composite_first_price - self.stock_first_price)
         return stock_beta
 
+class Derivative:
+
+    def __init__(self, derivative):
+        self.derivative = derivative
+
+    def option(self):
+        if self.derivative == 'Option':
+            pass
+
+    def future(self):
+        if self.derivative == 'Future':
+            pass
+
+    def forward(self):
+        if self.derivative == 'Forward':
+            pass
+
 pygame.init()
 
 while True:
