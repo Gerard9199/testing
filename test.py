@@ -26,6 +26,17 @@ class Rectt:
         self.rect.center = (self.width // 2, self.heigth // 2)
         self.rect.center
 
+class Test:
+    x = 0
+    y = 0
+
+    def __init__(self, x):
+        self.x = x
+        self.y = y
+
+    def recta(self):
+        return (test.y - self.y)/(test.x - self.x)
+
 pygame.init()
 
 while True:
